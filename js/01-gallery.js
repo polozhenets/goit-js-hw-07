@@ -6,6 +6,7 @@ const gallery = document.querySelector(".gallery");
 gallery.addEventListener("click", galleryHandler);
 
 function galleryHandler(event) {
+  event.preventDefault();
   if (event.target.nodeName !== "IMG") {
     return
   }
